@@ -30,16 +30,16 @@ let contactList = [
     
 function createSingleIndex(Contact) {
 
-document.querySelectorAll("main").addEventListener("click", e=>{
-for(let i = 0; i < contactList.length; i++)
-    if(contactList.name = Contact.name){
-      cleanUpIndex()
-      renderView(Contact)
-    }
+// document.querySelectorAll("main").addEventListener("click", e=>{
+// for(let i = 0; i < contactList.length; i++)
+//     if(contactList.name = Contact.name){
+//       cleanUpIndex()
+//       renderView(Contact)
+//     })
 
-  
 
-})
+
+// }
   let singleIndexa = document.createElement('a')
   singleIndexa.href ="page3.html"
   
@@ -81,6 +81,17 @@ function cleanUpView(){
 
 function renderView(Contact){
 
+document.getElementsByClassName("button close").addEventListener("click", e=> {
+
+    e.preventDefault()
+})
+
+document.getElementsByClassName("button edit").addEventListener("click", e=> {
+
+    e.preventDefault()
+}
+
+)
   let contactinfoDiv = document.createElement('div')
       contactinfoDiv.classList.add("contactinfo")
   
@@ -144,6 +155,11 @@ function renderView(Contact){
 }
     
 function renderCreate(){
+
+document.getElementsByClassName("button cancel").addEventListener("click", e=> {
+
+    e.preventDefault()
+})
 
 let editDiv = document.createElement('div')
     editDiv.classList.add("contactedit")
