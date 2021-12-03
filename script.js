@@ -30,16 +30,16 @@ let contactList = [
     
 function createSingleIndex(Contact) {
 
-// document.querySelectorAll("main").addEventListener("click", e=>{
+// document.getElementsByClassName("contact").addEventListener("click", e=>{
 // for(let i = 0; i < contactList.length; i++)
 //     if(contactList.name = Contact.name){
 //       cleanUpIndex()
 //       renderView(Contact)
-//     })
+//     }
 
 
 
-// }
+// })
   let singleIndexa = document.createElement('a')
   singleIndexa.href ="page3.html"
   
